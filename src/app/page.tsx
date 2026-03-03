@@ -1,65 +1,83 @@
+import Navbar from "@/components/features/landingPage/layouts/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+
+const page = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className=" bg-[#172028CC]  text-white">
+      {/* Navbar */}
+      <Navbar />
+      {/* Hero */}
+      <section className="px-6 md:px-20 pt-10 pb-20">
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            Move From Idea to a <span className="text-primary">3triving</span>{" "}
+            Business Today!
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-6 text-gray-400 text-sm md:text-base">
+            For non-technical professionals, turning expertise into profitable
+            Apps.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+        {/* Images */}
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-800">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/hero-image1.svg"
+              alt="Tablet"
+              width={501}
+              height={406}
+              className="object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+            <Image
+              src="/images/hero-image2.svg"
+              alt="Phone"
+              width={501}
+              height={406}
+              className="object-cover"
+            />
+           <Image
+              src="/images/hero-image3.svg"
+              alt="Desktop"
+              width={501}
+              height={406}
+              className="object-cover"
+            />
+          <div className="rounded-xl  shadow-2xl border border-gray-800">
+            <Image
+              src="/images/hero-image4.svg"
+              alt="Desktop"
+              width={501}
+              height={406}
+              className="object-cover"
+            />
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+      {/* Bottom Projects Bar */}
+      <div className="bg-[#0b1220] border-t border-gray-800 py-6 ">
+        <div className="flex gap-12 justify-center text-gray-500 text-sm whitespace-nowrap">
+          {[
+            "MTracker",
+            "Mitlas",
+            "MyVamsnet",
+            "Cozaipay",
+            "AngyCare",
+            "Mtracker",
+            "MyVamsnet",
+          ].map((item, i) => (
+            <span key={i} className="hover:text-lime-400 cursor-pointer">
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+    </main>
   );
 }
+
+export default page

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+.wrapper {
+  @apply mx-auto container w-full ;
+}
+
+@theme {
+  --color-primary: #779901;
+  --color-secondary: #DB4444;
+}
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
