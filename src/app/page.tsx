@@ -1,3 +1,4 @@
+import AboutSection from "@/components/features/landingPage/AboutSection";
 import Navbar from "@/components/features/landingPage/layouts/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,20 +34,20 @@ const page = () => {
               className="object-cover"
             />
           </div>
-            <Image
-              src="/images/hero-image2.svg"
-              alt="Phone"
-              width={501}
-              height={406}
-              className="object-cover"
-            />
-           <Image
-              src="/images/hero-image3.svg"
-              alt="Desktop"
-              width={501}
-              height={406}
-              className="object-cover"
-            />
+          <Image
+            src="/images/hero-image2.svg"
+            alt="Phone"
+            width={501}
+            height={406}
+            className="object-cover"
+          />
+          <Image
+            src="/images/hero-image3.svg"
+            alt="Desktop"
+            width={501}
+            height={406}
+            className="object-cover"
+          />
           <div className="rounded-xl  shadow-2xl border border-gray-800">
             <Image
               src="/images/hero-image4.svg"
@@ -59,8 +60,8 @@ const page = () => {
         </div>
       </section>
       {/* Bottom Projects Bar */}
-      <div className="bg-[#0b1220] border-t border-gray-800 py-6 ">
-        <div className="flex gap-12 justify-center text-gray-500 text-sm whitespace-nowrap">
+      <div className="bg-[#232B33] border-t border-gray-800 py-6 ">
+        <div className="flex gap-12 justify-between text-gray-500 text-2xl ">
           {[
             "MTracker",
             "Mitlas",
@@ -76,6 +77,7 @@ const page = () => {
           ))}
         </div>
       </div>
+      <AboutSection/>
     </main>
   );
 }
