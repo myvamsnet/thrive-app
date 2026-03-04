@@ -1,10 +1,9 @@
-import { provenModelData } from "@/components/constant/provenModelData";
-import ProvenModelCards from "./ProvenModelCards";
 
-const ProvenModel = () => {
+
+const Portfolio = () => {
   return (
-    <section className="bg-secondary">
-      <div className="wrapper py-39">
+    <div>
+      <div className="wrapper">
         {/* Top Small Label */}
         <p className="text-xl leading-8 tracking-[0%] normal uppercase mb-4 text-gray-400">
           Proven Model
@@ -22,22 +21,9 @@ const ProvenModel = () => {
             Our ultimate goal is your success!
           </p>
         </div>
-
-        {/* Cards */}
-        <div className="grid grid-cols-3 gap-6">
-          {provenModelData.map((card, index) => (
-            <div key={index}>
-              <ProvenModelCards
-                image={card.image}
-                title={card.title}
-                items={card.items}
-              />
-            </div>
-          ))}
-        </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
 
-export default ProvenModel;
+export default Portfolio
