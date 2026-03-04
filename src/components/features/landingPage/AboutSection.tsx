@@ -15,8 +15,8 @@ const AboutSection = () => {
   ];
   return (
     <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
-      <div className="wrapper space-y-[156px]">
-        <div className="grid md:grid-cols-2 gap-32 items-center">
+      <div className="wrapper space-y-39">
+        <div className="flex justifty-center  items-center">
           <div>
             <div>
               <p className="text-xl uppercase leadding-32  tracking-[0%] text-gray-400 mb-6">
@@ -79,14 +79,14 @@ const AboutSection = () => {
               Why Us?
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold  mb-6">
               We don’t just build products,
               <br />
               we build <span className="text-lime-400">Striving</span>{" "}
               businesses.
             </h2>
 
-            <p className="text-gray-400 max-w-xl mb-10">
+            <p className="text-gray-400 leading-8 mb-10">
               You know exactly what your industry needs. So why isn’t your
               product live yet? We’re not just a service provider; it’s the
               catalytic force that transforms ideas into thriving digital
