@@ -61,7 +61,7 @@ const page = () => {
       </section>
       {/* Bottom Projects Bar */}
       <div className="bg-[#232B33] border-t border-gray-800 py-6 ">
-        <div className="flex gap-12 justify-between text-gray-500 text-2xl ">
+        <div className="flex gap-12 justify-between text-gray-500 text-2xl overflow-x-hidden">
           {[
             "MTracker",
             "Mitlas",
