@@ -3,24 +3,21 @@ import PricingCard from "./PricingCard";
 import { pricingData } from "@/components/constant/pricingData";
 
 
-const PricingSection = () => {
+const InvestToday = () => {
   return (
     <section className="bg-secondary">
       <div className="wrapper px-4">
+        <p className="uppercase text-xl text-gray-400  mb-6">Invest Today</p>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <div>
-            <p className="uppercase text-xl text-gray-400  mb-6">
-              Invest Today
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold w-[343px]">
+          
+            <h2 className="text-4xl md:text-5xl font-bold w-[343px] md:w-[709px]">
               <span className="text-primary">Get</span>{" "}
               <span className="text-tertiary">started</span> with 3trive today!
             </h2>
-          </div>
-
-          <p className="text-gray-400 mt-4 md:mt-0">
-            Pricing that fits just right.
-          </p>
+            <p className="text-gray-400 text-xl mt-4 md:mt-0 w-[250px]">
+              Pricing that fits just right.
+            </p>
+          
         </div>
 
         {/* Cards */}
@@ -61,4 +58,4 @@ const PricingSection = () => {
   );
 }
 
-export default PricingSection
+export default InvestToday

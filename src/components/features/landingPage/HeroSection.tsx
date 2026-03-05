@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 md:px-20 pt-10 pb-20">
+      <section className="min-h-screen bg-[url('/images/hero_image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
         <div className="text-center mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold lg:w-[809px] w-[325px] text-center mx-auto">
             Move From Idea to a <span className="text-primary">3triving</span>{" "}
@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
         </div>
         {/* Bottons */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 lg:hidden  block text-center mx-auto ">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 lg:hidden  block text-center mx-auto px-4">
           {/* Primary Button */}
           <button className="bg-tertiary text-black font-semibold px-8 py-3 rounded-lg w-full">
             Book Clarity Call
@@ -30,7 +30,7 @@ const HeroSection = () => {
           </button>
         </div>
         {/* Images */}
-        <div className="mt-16  items-center justify-center gap-8">
+        <div className="mt-16  items-center justify-center gap-8 overflow-x-hidden">
           <Marquee gradient={false} speed={50}>
             {heroimages.map((image, index) => (
               <div key={index}>

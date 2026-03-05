@@ -18,11 +18,11 @@ const Navbar = () => {
     }
   return (
     <header className=" bg-[#232B33]">
-      <div className="wrapper flex items-center justify-between gap-10 opacity-[88%] py-6 px-4 lg:px-0">
+      <div className="wrapper flex items-center justify-between gap-10 opacity-[88%] py-6 mx-6 lg:px-0 px-4">
         {/* Logo */}
         <Image src="/images/logo.svg" alt="logo" width={142} height={50} />
         {/* Mobile toggle */}
-        <button onClick={toggleMenu} className="lg:hidden">
+        <button onClick={toggleMenu} className="lg:hidden ">
           {isOpen ? (
             <X size={22} />
           ) : (
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* Moblie Nav */}
       </div>
       {isOpen && (
-        <div className=" bg-[#141B22]  border-2 rounded-4xl px-4 py-8 space-y-8 w-full -mt-5  block lg:hidden">
+        <div className="wrapper text-center gap-8 lg:gap-3  pt-8 w-full -mt-5 justify-between items-center text-lg text-gray-300 rounded-3xl bg-[#232B33] p-8 border-4 border-white/10 ">
           <div className="flex flex-col text-center gap-8">
             {navLink.map((link) => (
               <button

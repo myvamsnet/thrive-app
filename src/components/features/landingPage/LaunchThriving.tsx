@@ -2,11 +2,11 @@
 
 const LaunchThriving = () => {
   return (
-    <section className=" py-24 px-4">
+    <section className="bg-secondary  py-12 md:py-20 px-4 md:px-10">
       {/* Background Card */}
-      <div className="wrapper rounded-2xl  border-4 border-white/10 bg-gradient-to-br from-[#1f2a2e] via-[#1b3532] to-[#102022] shadow-2xl">
+      <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl">
         {/* Radial Pattern Overlay */}
-        <div className=" opacity-20 bg-[radial-gradient(circle_at_center,_rgba(132,204,22,0.4)_0%,_transparent_70%)]" />
+        <div />
 
         {/* Content */}
         <div className="text-center py-20 px-6 md:px-16">
@@ -26,12 +26,12 @@ const LaunchThriving = () => {
           {/* Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             {/* Primary Button */}
-            <button className="bg-tertiary text-black font-semibold px-8 py-3 rounded-lg shadow-lg">
+            <button className="bg-tertiary text-black font-semibold px-8 py-3 rounded-lg shadow-lg w-full lg:w-58">
               Book Clarity Call
             </button>
 
             {/* Secondary Button */}
-            <button className="border border-tertiary text-terborder-tertiary font-semibold px-8 py-3 rounded-lg hover:bg-terborder-tertiary hover:text-black transition duration-300">
+            <button className="border border-tertiary text-terborder-tertiary font-semibold px-8 py-3 rounded-lg w-full lg:w-58">
               Chat with support
             </button>
           </div>

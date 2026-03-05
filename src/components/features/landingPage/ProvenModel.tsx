@@ -24,7 +24,7 @@ const ProvenModel = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
           {provenModelData.map((card, index) => (
             <div key={index}>
               <ProvenModelCards

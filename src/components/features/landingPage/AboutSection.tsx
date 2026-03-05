@@ -19,11 +19,11 @@ const AboutSection = () => {
         <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           <div>
             <div>
-              <p className="text-xl uppercase   tracking-[0%] text-gray-400 mb-5">
+              <p className="text-xl uppercase   tracking-[0%] text-gray-400 mb-3">
                 About
               </p>
 
-              <h1 className="lg:text-[44px] md:text-[28px]  lg:w-[709px] md:w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-5">
+              <h1 className="lg:text-[44px] md:text-[28px]  lg:w-[709px] md:w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-4">
                 We build <span className="text-primary">profitable</span> tech
                 products for audacious{" "}
                 <span className="text-primary">non-technical</span>{" "}
@@ -76,14 +76,14 @@ const AboutSection = () => {
 
           {/* Right Content */}
           <div>
-            <p className="text-xl uppercase  text-gray-400 mb-5">Why Us?</p>
+            <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
 
-            <h2 className="lg:text-[44px] md:text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-5">
+            <h2 className="lg:text-[44px] md:text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
               We don’t just build products, we build{" "}
               <span className="text-primary">Striving</span> businesses.
             </h2>
 
-            <p className="text-gray-400 md:w-[343px] lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-6">
+            <p className="text-gray-400 md:w-[343px] lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-4">
               You know exactly what your industry needs. So why isn’t your
               product live yet? We’re not just a service provider; it’s the
               catalytic force that transforms ideas into thriving digital
