@@ -4,7 +4,7 @@ import ProvenModelCards from "./ProvenModelCards";
 const ProvenModel = () => {
   return (
     <section className="bg-secondary">
-      <div className="wrapper py-39">
+      <div className="wrapper py-39 px-4">
         {/* Top Small Label */}
         <p className="text-xl leading-8 tracking-[0%] normal uppercase mb-4 text-gray-400">
           Proven Model
@@ -12,7 +12,7 @@ const ProvenModel = () => {
 
         {/* Heading Section */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between  mb-14">
-          <h2 className="text-[44px] md:text-[28px] font-bold text-white leading-16 w-[709px]">
+          <h2 className="text-[44px] md:text-[28px] font-bold text-white leading-16 lg:w-[709px] md:w-[343px]">
             Everything you need to launch a{" "}
             <span className="text-primary">profitable</span> and{" "}
             <span className="text-primary">thriving</span> product.
@@ -24,7 +24,7 @@ const ProvenModel = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           {provenModelData.map((card, index) => (
             <div key={index}>
               <ProvenModelCards

@@ -18,7 +18,7 @@ const Navbar = () => {
     }
   return (
     <header className=" bg-[#232B33]">
-      <div className="wrapper flex items-center justify-between gap-10 opacity-[88%] py-6">
+      <div className="wrapper flex items-center justify-between gap-10 opacity-[88%] py-6 px-4 lg:px-0">
         {/* Logo */}
         <Image src="/images/logo.svg" alt="logo" width={142} height={50} />
         {/* Mobile toggle */}
@@ -36,7 +36,7 @@ const Navbar = () => {
         </button>
 
         {/* Links */}
-        <nav className="hidden md:flex gap-10 text-lg text-gray-300 ">
+        <nav className="hidden lg:flex gap-10 text-lg text-gray-300 ">
           {navLink.map((link) => (
             <li key={link.name} className="list-none">
               <button
@@ -50,13 +50,13 @@ const Navbar = () => {
           ))}
         </nav>
         {/* Button */}
-        <button className="bg-[#C6FF00] text-[#172028] px-5 py-3 rounded-md text-lg font-bold lg:block md:hidden">
+        <button className="bg-[#C6FF00] text-[#172028] px-5 py-3 rounded-md text-lg font-bold lg:block hidden">
           Chat Support
         </button>
         {/* Moblie Nav */}
       </div>
       {isOpen && (
-        <div className=" bg-[#141B22]  border-2 rounded-4xl px-4 pt-8 w-full -mt-5  block lg:hidden">
+        <div className=" bg-[#141B22]  border-2 rounded-4xl px-4 py-8 space-y-8 w-full -mt-5  block lg:hidden">
           <div className="flex flex-col text-center gap-8">
             {navLink.map((link) => (
               <button
@@ -72,10 +72,11 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-
-          <button className="text-black text-base font-bold  bg-[#C6FF00] py-2 px-3 rounded-xl w-[219px] text-center mx-auto">
-            Chat with Support
-          </button>
+          <div className="text-center mx-auto pt-8">
+            <button className="text-black text-base font-bold  bg-tertiary py-2 px-3 rounded-xl w-[219px] ">
+              Chat with Support
+            </button>
+          </div>
         </div>
       )}
     </header>

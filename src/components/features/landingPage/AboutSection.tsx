@@ -16,7 +16,7 @@ const AboutSection = () => {
   return (
     <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
       <div className="wrapper space-y-39">
-        <div className="flex justifty-center items-center gap-8 ">
+        <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           <div>
             <div>
               <p className="text-xl uppercase   tracking-[0%] text-gray-400 mb-5">
@@ -30,7 +30,7 @@ const AboutSection = () => {
                 professionals.
               </h1>
 
-              <p className="text-gray-400 lg:w-[778px] text-xl leading-8 mb-6">
+              <p className="text-gray-400 lg:w-[778px] md:w-[343px] lg:text-xl text-base leading-8 mb-6">
                 You’ve spent years mastering your field. Solve that problem now,
                 launch the product people have been waiting for. We handle
                 design, development, and launch in 120 days. One team, one roof,
@@ -62,7 +62,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-8 items-center">
+        <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           {/* Left Image */}
           <div className="rounded-2xl border-[#232B33] opacity-80">
             <Image
@@ -70,22 +70,20 @@ const AboutSection = () => {
               alt="Building"
               width={390}
               height={568}
+              className="w-full"
             />
           </div>
 
           {/* Right Content */}
           <div>
-            <p className="text-xl uppercase  text-gray-400 mb-5">
-              Why Us?
-            </p>
+            <p className="text-xl uppercase  text-gray-400 mb-5">Why Us?</p>
 
-            <h2 className="lg:text-[44px] md:text-[28px]  lg:w-[778px] md:w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-5">
-              We don’t just build products,
-              we build <span className="text-primary">Striving</span>{" "}
-              businesses.
+            <h2 className="lg:text-[44px] md:text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-5">
+              We don’t just build products, we build{" "}
+              <span className="text-primary">Striving</span> businesses.
             </h2>
 
-            <p className="text-gray-400 text-xl w-[778px] font-normal leading-8 mb-6">
+            <p className="text-gray-400 md:w-[343px] lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-6">
               You know exactly what your industry needs. So why isn’t your
               product live yet? We’re not just a service provider; it’s the
               catalytic force that transforms ideas into thriving digital
