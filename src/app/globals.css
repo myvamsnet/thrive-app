@@ -4,10 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-  --color-primary: #779901;
-  --color-secondary: #172028;
-}
 
 @theme inline {
   --color-background: var(--background);
@@ -59,9 +55,6 @@
   }
 } */
 
-.wrapper {
-  @apply mx-auto max-w-[1200px] w-full;
-}
 
 :root {
   --radius: 0.625rem;
@@ -147,6 +140,8 @@
 @theme {
   --color-primary: #779901;
   --color-secondary: #172028;
+  --color-tertiary:  #C7FF01;
+ 
 }
 
 :root {
