@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {  Bounce,  Rotate,} from "react-awesome-reveal";
 
 
 const AboutSection = () => {
@@ -39,18 +40,20 @@ const AboutSection = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-              {cards.map((card) => (
-                <Image
-                  key={card.src}
-                  src={card.src}
-                  alt={card.alt}
-                  width={248}
-                  height={220}
-                  className="w-full"
-                />
-              ))}
-            </div>
+            <Bounce>
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+                {cards.map((card) => (
+                  <Image
+                    key={card.src}
+                    src={card.src}
+                    alt={card.alt}
+                    width={248}
+                    height={220}
+                    className="w-full"
+                  />
+                ))}
+              </div>
+            </Bounce>
           </div>
           <div className="rounded-2xl border-[#232B33] opacity-80  ">
             <Image
@@ -64,16 +67,17 @@ const AboutSection = () => {
 
         <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           {/* Left Image */}
-          <div className="rounded-2xl border-[#232B33] opacity-80">
-            <Image
-              src="/images/whyus-image.svg"
-              alt="Building"
-              width={390}
-              height={568}
-              className="w-full"
-            />
-          </div>
-
+          <Rotate direction="bottom-left">
+            <div className="rounded-2xl border-[#232B33] opacity-80">
+              <Image
+                src="/images/whyus-image.svg"
+                alt="Building"
+                width={390}
+                height={568}
+                className="w-full"
+              />
+            </div>
+          </Rotate>
           {/* Right Content */}
           <div>
             <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
