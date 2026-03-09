@@ -1,6 +1,6 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import React from 'react'
+
 
 const ProfitPortfolio = () => {
   return (
@@ -10,12 +10,12 @@ const ProfitPortfolio = () => {
           <p className="text-xl tracking-[0%] text-gray-400 mb-5 ">
             PORTFOLIO
           </p>
-          <div className="flex flex-col md:flex-row  items-center ">
+          <div className="flex flex-col justify-between md:flex-row  items-center ml-86">
             <h2 className="text-4xl md:text-5xl font-bold w-[343px] md:w-[709px]">
               <span className="text-primary">Profit</span> and
               <span className="text-primary"> 3triving</span> projects.
             </h2>
-            <p className="text-gray-300 text-base md:text-xl w-[343px] md:w-[467px] leading-8 tracking-[0%] pt-4 md:pt-0">
+            <p className="text-gray-300 text-base md:text-xl w-[343px] md:w-[467px] leading-8 tracking-[0%] pt-4 md:pt-0 ">
               3trive is not another agency, we’re your partner.
             </p>
           </div>
