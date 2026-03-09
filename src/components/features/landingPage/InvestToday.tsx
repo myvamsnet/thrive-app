@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PricingCard from "./PricingCard";
 import { pricingData } from "@/components/constant/pricingData";
-import { Flip } from "react-awesome-reveal";
+import { Flip, Zoom } from "react-awesome-reveal";
 
 
 const InvestToday = () => {
@@ -21,7 +21,7 @@ const InvestToday = () => {
 
         {/* Cards */}
         <div className="grid lg:grid-cols-3 gap-8">
-          <Flip direction="horizontal">
+          <Zoom>
             {pricingData.map((plan, index) => (
               <PricingCard
                 key={index}
@@ -32,7 +32,7 @@ const InvestToday = () => {
                 highlighted={plan.highlighted}
               />
             ))}
-          </Flip>
+          </Zoom>
         </div>
         {/* Bottom CTA Section */}
         <div className="my-16 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2">

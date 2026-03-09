@@ -1,5 +1,6 @@
 import { provenModelData } from "@/components/constant/provenModelData";
 import ProvenModelCards from "./ProvenModelCards";
+import { Flip, Zoom } from "react-awesome-reveal";
 
 const ProvenModel = () => {
   return (
@@ -25,15 +26,17 @@ const ProvenModel = () => {
 
         {/* Cards */}
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
-          {provenModelData.map((card, index) => (
-            <div key={index}>
-              <ProvenModelCards
-                image={card.image}
-                title={card.title}
-                items={card.items}
-              />
-            </div>
-          ))}
+          <Flip direction="horizontal">
+            {provenModelData.map((card, index) => (
+              <div key={index}>
+                <ProvenModelCards
+                  image={card.image}
+                  title={card.title}
+                  items={card.items}
+                />
+              </div>
+            ))}
+          </Flip>
         </div>
       </div>
     </section>
