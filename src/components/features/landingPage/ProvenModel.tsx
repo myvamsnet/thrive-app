@@ -13,7 +13,7 @@ const ProvenModel = () => {
 
         {/* Heading Section */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between  mb-14">
-          <h2 className="text-[44px] md:text-[28px] font-bold text-white leading-16 lg:w-[709px] md:w-[343px]">
+          <h2 className="text-[44px] md:text-[28px] font-bold text-white leading-16 lg:w-177.25 md:w-85.75">
             Everything you need to launch a{" "}
             <span className="text-primary">profitable</span> and{" "}
             <span className="text-primary">thriving</span> product.

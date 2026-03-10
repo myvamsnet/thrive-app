@@ -25,6 +25,7 @@ const Footer = () => {
         <Image src="/images/instagram.svg" alt="logo" width={24} height={24} />
         <Image src="/images/linkedin.svg" alt="logo" width={24} height={24} />
       </div>
+      <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl"></div>
     </footer>
   );
 }
