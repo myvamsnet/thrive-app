@@ -1,7 +1,16 @@
+"use client";
+
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Slider from "react-slick";
+import { useRef } from "react";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ProfitPortfolio = () => {
+  const sliderRef = useRef<Slider | null>(null);
+
   const images = [
     "/images/hero-image2.svg",
     "/images/hero-image3.svg",
@@ -9,38 +18,57 @@ const ProfitPortfolio = () => {
     "/images/hero-image3.svg",
   ];
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="py-12 md:py-38 wrapper">
-      <p className="text-xl tracking-[0%] text-gray-400 mb-5">PORTFOLIO</p>
+      <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 
-      <div className="flex flex-col justify-between md:flex-row items-center">
-        <h2 className="text-4xl md:text-5xl font-bold w-full lg:w-177.25">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <h2 className="text-4xl md:text-5xl font-bold">
           <span className="text-primary">Profit</span> and
           <span className="text-primary"> 3triving</span> projects.
         </h2>
-        <p className="text-gray-300 text-base md:text-xl w-85.75 md:w-116.75 leading-8 tracking-[0%] pt-4 md:pt-0">
+
+        <p className="text-gray-300 text-base md:text-xl pt-4 md:pt-0">
           3trive is not another agency, we&apos;re your partner.
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 py-4">
-        {images.map((src, index) => (
-          <Image
-            key={index}
-            src={src}
-            alt={`Portfolio ${index + 1}`}
-            width={672}
-            height={513}
-            className="w-full"
-          />
-        ))}
+      <div className="py-4 ">
+        <Slider ref={sliderRef} {...settings}>
+          {images.map((src, index) => (
+            <Image
+              key={index}
+              src={src}
+              alt={`Portfolio ${index + 1}`}
+              width={672}
+              height={513}
+              className="w-full lg:w-[672px] px-4"
+            />
+          ))}
+        </Slider>
       </div>
 
-      <div className="wrapper flex items-center gap-5 pt-4">
-        <button className="bg-secondary py-3 px-11 rounded-2xl border border-white/10">
+      <div className="flex items-center gap-5 pt-4">
+        <button
+          onClick={() => sliderRef.current?.slickPrev()}
+          className="bg-secondary py-3 px-11 rounded-2xl border border-white/10"
+        >
           <ArrowLeft />
         </button>
-        <button className="bg-secondary py-3 px-11 rounded-2xl border border-white/10">
+
+        <button
+          onClick={() => sliderRef.current?.slickNext()}
+          className="bg-secondary py-3 px-11 rounded-2xl border border-white/10"
+        >
           <ArrowRight />
         </button>
       </div>
