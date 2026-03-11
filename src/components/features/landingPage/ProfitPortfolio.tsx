@@ -28,21 +28,22 @@ const ProfitPortfolio = () => {
   };
 
   return (
-    <section className="py-12 md:py-38 wrapper">
-      <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
+    <section className="py-12 md:py-38">
+      <div className="wrapper px-4">
+        <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <h2 className="text-4xl md:text-5xl font-bold">
-          <span className="text-primary">Profit</span> and
-          <span className="text-primary"> 3triving</span> projects.
-        </h2>
+        <div className="flex flex-col md:flex-row justify-between  items-center">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            <span className="text-primary">Profit</span> and
+            <span className="text-primary"> 3triving</span> projects.
+          </h2>
 
-        <p className="text-gray-300 text-base md:text-xl pt-4 md:pt-0">
-          3trive is not another agency, we&apos;re your partner.
-        </p>
+          <p className="text-gray-300 text-base md:text-xl pt-4 md:pt-0">
+            3trive is not another agency, we&apos;re your partner.
+          </p>
+        </div>
       </div>
-
-      <div className="py-4 ">
+      <div className="py-4 lg:pl-84">
         <Slider ref={sliderRef} {...settings}>
           {images.map((src, index) => (
             <Image
@@ -51,13 +52,13 @@ const ProfitPortfolio = () => {
               alt={`Portfolio ${index + 1}`}
               width={672}
               height={513}
-              className="w-full lg:w-[672px] px-4"
+              className="w-full  lg:px-4 px-1"
             />
           ))}
         </Slider>
       </div>
 
-      <div className="flex items-center gap-5 pt-4">
+      <div className="flex items-center gap-5 pt-4 wrapper">
         <button
           onClick={() => sliderRef.current?.slickPrev()}
           className="bg-secondary py-3 px-11 rounded-2xl border border-white/10"

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import FrequentlyQuestion from "./FrequentlyQuestion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import FrequentlyQuestion from "./FrequentlyQuestion";
+
 
 const Testimonials = () => {
   return (
@@ -46,7 +47,7 @@ const Testimonials = () => {
             <ArrowRight />
           </button>
         </div>
-        <FrequentlyQuestion />
+      
       </div>
     </section>
   );
