@@ -1,29 +1,29 @@
-import { faq } from "../features/landingPage/FrequentlyQuestion";
 
 
-export const faqs: faq[] = [
+
+export const faqs = [
   {
     id: 1,
-    question: "What happens if I’m not approved for a Line of Credit?",
+    question: "How do i get started?",
     answer:
-      "If you’re not approved, you may still qualify for other Tilt products designed to help you build credit responsibly.",
+      "3trive is not another agency, we your extended business success partner. What are the meetings MyVamsnet should be having to achieve collaborative success in alignment with the mission and vision? When? Why? Processes.",
   },
   {
     id: 2,
-    question: "Is this a credit card?",
+    question: "Can I request a business idea?",
     answer:
-      "No. This is not a traditional credit card. It’s a Line of Credit designed to help build payment history.",
+      "3trive is not another agency, we your extended business success partner. What are the meetings MyVamsnet should be having to achieve collaborative success in alignment with the mission and vision? When? Why? Processes.",
   },
   {
     id: 3,
-    question: "Is it safe to link my bank account?",
+    question: "Development & Milestone Testing?",
     answer:
-      "Yes. Your bank information is protected using bank-level encryption and secure providers.",
+      "3trive is not another agency, we your extended business success partner. What are the meetings MyVamsnet should be having to achieve collaborative success in alignment with the mission and vision? When? Why? Processes.",
   },
   {
     id: 4,
-    question: "How does a Line of Credit help build payment history?",
+    question: "Final Testing & Handover?",
     answer:
-      "On-time payments are reported to credit bureaus, helping you establish and improve your payment history.",
+      "3trive is not another agency, we your extended business success partner. What are the meetings MyVamsnet should be having to achieve collaborative success in alignment with the mission and vision? When? Why? Processes.",
   },
 ];

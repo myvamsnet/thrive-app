@@ -9,6 +9,8 @@ import Footer from "@/components/features/landingPage/layouts/Footer";
 import Testimonials from "@/components/features/landingPage/Testimonials";
 import ProfitPortfolio from "@/components/features/landingPage/ProfitPortfolio";
 import InvestToday from "@/components/features/landingPage/InvestToday";
+import FrequentlyQuestion from "@/components/features/landingPage/FrequentlyQuestion";
+import QuestionAndAnswer from "@/components/features/landingPage/QuestionsAndAnswers";
 
 
 
@@ -20,9 +22,9 @@ const page = () => {
       <BottomBar />
       <AboutSection />
       <BottomBar />
-      <ProfitPortfolio/>
       <ProvenModel />
-      <InvestToday/>
+      <ProfitPortfolio />
+      <InvestToday />
       <BottomBar />
       <Testimonials />
       <BottomBar />
