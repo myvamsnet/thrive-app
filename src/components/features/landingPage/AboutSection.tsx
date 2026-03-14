@@ -24,7 +24,7 @@ const AboutSection = () => {
                 About
               </p>
               <Fade direction="down">
-                <h1 className="lg:text-[44px] md:text-[28px]  lg:w-[709px] md:w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-4">
+                <h1 className="lg:text-[44px] text-[28px]  lg:w-[709px] md:w-[343px] lg:leading-15 md:leading-[130%] font-bold  mb-4">
                   We build <span className="text-primary">profitable</span> tech
                   products for audacious{" "}
                   <span className="text-primary">non-technical</span>{" "}
@@ -81,8 +81,8 @@ const AboutSection = () => {
           {/* Right Content */}
           <div>
             <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
-<Fade direction="down">
-            <h2 className="lg:text-[44px] md:text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
+        <Fade direction="down">
+            <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
               We don’t just build products, we build{" "}
               <span className="text-primary">Striving</span> businesses.
             </h2>
@@ -94,7 +94,7 @@ const AboutSection = () => {
               ecosystems. We build profit-generating machines. We focus on the
               metrics that determine whether a product thrives.
             </p>
-</Fade>
+      </Fade>
             {/* Cards */}
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
               {whyUsCards.map((card) => (

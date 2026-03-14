@@ -56,8 +56,8 @@ const Navbar = () => {
         {/* Moblie Nav */}
       </div>
       {isOpen && (
-        <div className="wrapper text-center gap-8 lg:gap-3  pt-8 w-full -mt-5 justify-between items-center text-lg text-gray-300 rounded-3xl bg-[#232B33] p-8 border-4 border-white/10 ">
-          <div className="flex flex-col text-center gap-8">
+        <div className="wrapper text-center gap-8 lg:gap-3  pt-8 w-full -mt-5 justify-between items-center text-lg text-gray-300 rounded-3xl bg-[#232B33] p-8 border-4 border-white/10">
+          <div className="flex flex-col text-center gap-8 ">
             {navLink.map((link) => (
               <button
                 key={link.name}

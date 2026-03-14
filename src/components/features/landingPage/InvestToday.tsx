@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PricingCard from "./PricingCard";
 import { pricingData } from "@/components/constant/pricingData";
-import { Flip, Zoom } from "react-awesome-reveal";
+import {  Zoom } from "react-awesome-reveal";
 
 
 const InvestToday = () => {
@@ -35,7 +35,7 @@ const InvestToday = () => {
           </Zoom>
         </div>
         {/* Bottom CTA Section */}
-        <div className="my-16 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2">
+        <div className="mt-8 mb-38 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2">
           <div className="flex lg:flex-row flex-col items-center gap-3">
             <Image
               src="/images/slots-image.svg"
@@ -49,7 +49,7 @@ const InvestToday = () => {
               of wasting time and money on something that won’t work. Book
               Clarity Call now!
             </p>
-            <p className="text-tertiary font-bold text-[32px] ">
+            <p className="text-tertiary font-bold text-[32px] underline">
               Only 4 slots left
             </p>
           </div>

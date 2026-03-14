@@ -1,9 +1,10 @@
 import { Bounce } from "react-awesome-reveal";
+import Footer from "./layouts/Footer";
 
 
 const LaunchThriving = () => {
   return (
-    <section className="bg-secondary  py-12 md:py-20 px-4 md:px-10">
+    <section className="bg-secondary  py-38 px-4">
       <Bounce>
         {/* Background Card */}
         <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl">
@@ -37,6 +38,9 @@ const LaunchThriving = () => {
           </div>
         </div>
       </Bounce>
+      <div className="mt-24">
+        <Footer />
+      </div>
     </section>
   );
 }

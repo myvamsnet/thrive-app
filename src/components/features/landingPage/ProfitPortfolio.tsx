@@ -28,7 +28,7 @@ const ProfitPortfolio = () => {
   };
 
   return (
-    <section className="py-12 md:py-38">
+    <section className="py-12 md:pb-38">
       <div className="wrapper px-4">
         <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 

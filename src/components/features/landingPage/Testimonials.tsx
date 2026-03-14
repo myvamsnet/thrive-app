@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import FrequentlyQuestion from "./FrequentlyQuestion";
 import QuestionAndAnswer from "./QuestionsAndAnswers";
 
 
@@ -12,7 +11,7 @@ const Testimonials = () => {
           TESTIMONIALS
         </p>
         <div className=" flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="bg-secondary flex justify-between items-center gap-8 rounded-3xl py-4 w-[1117px]">
+          <div className="bg-secondary flex justify-between items-center gap-8 rounded-3xl  w-[1117px]">
             <Image
               src="/images/testimonial-1.svg"
               alt="testimonial"
