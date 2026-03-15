@@ -8,13 +8,13 @@ const InvestToday = () => {
   return (
     <section className="bg-secondary">
       <div className="wrapper px-4">
-        <p className="uppercase text-xl text-gray-400  mb-6">Invest Today</p>
+        <p className="uppercase lg:text-xl text-base text-gray-400  mb-6">Invest Today</p>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold w-[343px] md:w-[709px]">
+          <h2 className="text-[28px] lg:text-[44px] font-bold w-85.75 lg:w-177.25 leading-[130%]">
             <span className="text-primary">Get</span>{" "}
             <span className="text-tertiary">started</span> with 3trive today!
           </h2>
-          <p className="text-gray-400 text-xl mt-4 md:mt-0 w-[250px]">
+          <p className="text-gray-400 text-xl mt-4 md:mt-0 ">
             Pricing that fits just right.
           </p>
         </div>

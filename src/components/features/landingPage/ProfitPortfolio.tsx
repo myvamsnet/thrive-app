@@ -33,12 +33,12 @@ const ProfitPortfolio = () => {
         <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 
         <div className="flex flex-col md:flex-row justify-between  items-center">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-[28px] lg:text-[44px]  font-bold">
             <span className="text-primary">Profit</span> and
             <span className="text-primary"> 3triving</span> projects.
           </h2>
 
-          <p className="text-gray-300 text-base md:text-xl pt-4 md:pt-0">
+          <p className="text-gray-300 text-base lg:text-xl  pt-4 md:pt-0">
             3trive is not another agency, we&apos;re your partner.
           </p>
         </div>

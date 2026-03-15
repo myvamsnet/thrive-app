@@ -16,7 +16,7 @@ const AboutSection = () => {
   ];
   return (
     <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
-      <div className="wrapper space-y-39">
+      <div className="wrapper lg:space-y-39 space-y-17">
         <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           <div>
             <div>
