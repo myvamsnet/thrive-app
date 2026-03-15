@@ -19,11 +19,11 @@ const Testimonials = () => {
               height={377}
             />
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold w-[343px] md:w-[675px]">
+              <h2 className="text-[28px] lg:text-[44px] font-bold w-[343px] md:w-[675px] leading-[90px]">
                 Start a <span className="text-primary">3triving</span> business
                 today!
               </h2>
-              <p className="text-gray-300 text-base w-[254px] md:w-[685px] leading-8 tracking-[0%]">
+              <p className="text-gray-300 text-base w-[254px] lg:w-167.5 leading-8 ">
                 You know exactly what your industry needs. So why isn’t your
                 product live yet? You’re not afraid of the project. You’re
                 afraid of wasting time and money on something that won’t work.
