@@ -19,7 +19,7 @@ const Testimonials = () => {
               height={377}
             />
             <div>
-              <h2 className="text-[28px] lg:text-[44px] font-bold w-[343px] md:w-[675px] leading-[90px]">
+              <h2 className="text-[28px] lg:text-[44px] font-bold w-[343px] md:w-[675px] leading-[90px]cd">
                 Start a <span className="text-primary">3triving</span> business
                 today!
               </h2>

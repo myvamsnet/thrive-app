@@ -42,7 +42,7 @@ const Navbar = () => {
         showNav ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="wrapper flex items-center justify-between gap-10 opacity-[88%] py-6 mx-6 lg:px-0 px-4">
+      <div className="wrapper flex items-center justify-between gap-10 opacity-88 py-6 mx-6 lg:px-0 px-4">
         {/* Logo */}
         <Image src="/images/logo.svg" alt="logo" width={142} height={50} />
 

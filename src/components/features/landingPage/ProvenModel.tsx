@@ -16,7 +16,7 @@ const ProvenModel = () => {
           <h2 className="lg:text-[44px] text-[28px] font-bold text-white lg:leading-15 leading-[130%]  lg:w-177.25 md:w-85.75">
             Everything you need to launch a{" "}
             <span className="text-primary">profitable</span> and{" "}
-            <span className="text-primary">thriving</span> product.
+            <span className="text-primary">3triving</span> product.
           </h2>
 
           <p className="text-gray-400 text-xl pt-8">
