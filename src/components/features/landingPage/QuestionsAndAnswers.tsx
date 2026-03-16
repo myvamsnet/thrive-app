@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Bounce, Zoom } from "react-awesome-reveal";
 
 const QuestionAndAnswer = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section className="px-2 sm:px-6 py-20 sm:py-28 lg:py-[140px]">
