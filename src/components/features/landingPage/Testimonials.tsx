@@ -1,10 +1,10 @@
 
 "use client";
-import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import QuestionAndAnswer from "./QuestionsAndAnswers";
 import { testimonials } from "@/components/constant/testimonialData";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Testimonials = () => {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -39,20 +39,20 @@ const Testimonials = () => {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-[#1F272E] flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 rounded-3xl min-w-[85%] sm:min-w-[80%] md:min-w-[1117px] p-4 md:p-8 snap-start"
+              className="bg-[#1F272E] flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 rounded-3xl min-w-[85%] sm:min-w-[80%] md:min-w-279.25 py-4  snap-start"
             >
               <div className="w-full md:w-auto flex justify-center md:justify-start">
                 <Image
                   src={item.image}
                   alt="testimonial"
-                  width={280}
-                  height={320}
-                  className="rounded-2xl object-cover w-full max-w-[280px] md:max-w-none"
+                  width={335}
+                  height={377}
+                  className="rounded-2xl object-cover w-full max-w-70 md:max-w-none"
                 />
               </div>
 
               <div className="space-y-3 md:space-y-4 w-full">
-                <h2 className="text-lg sm:text-2xl lg:text-[44px] font-bold leading-snug sm:leading-snug lg:leading-[60px]">
+                <h2 className="text-lg sm:text-2xl lg:text-[44px] font-bold leading-snug sm:leading-snug lg:leading-15">
                   {item.title.split("3triving")[0]}
                   <span className="text-primary">3triving</span>
                   {item.title.split("3triving")[1]}

@@ -23,24 +23,23 @@ const ProfitPortfolio = () => {
     infinite: true,
     speed: 500,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 3, // desktop default
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // tablets and below
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 768, // mobile and below
         settings: {
           slidesToShow: 1,
         },
       },
     ],
   };
-
   return (
     <section className="py-12 md:pb-38">
       <div className="wrapper px-4">
@@ -66,7 +65,7 @@ const ProfitPortfolio = () => {
               alt={`Portfolio ${index + 1}`}
               width={672}
               height={513}
-              className="w-full  lg:px-4 px-1"
+              className="w-full  px-4 "
             />
           ))}
         </Slider>
