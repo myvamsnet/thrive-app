@@ -44,7 +44,7 @@ const QuestionAndAnswer = () => {
             </div>
           </Zoom>
           {/* IMAGE SECTION */}
-          <div className="rounded-2xl border-[#232B33] opacity-80">
+          <div className="rounded-2xl border-[#232B33] opacity-80 lg:block hidden">
             <Bounce>
               <Image
                 src="/images/question-image.svg"
