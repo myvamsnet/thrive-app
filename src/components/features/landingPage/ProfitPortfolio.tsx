@@ -2,89 +2,94 @@
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Slider from "react-slick";
 import { useRef } from "react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 const ProfitPortfolio = () => {
-  const sliderRef = useRef<Slider | null>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const images = [
-    "/images/hero-image2.svg",
-    "/images/hero-image3.svg",
-    "/images/hero-image2.svg",
-    "/images/hero-image3.svg",
+    "/images/portfolio-img.png",
+    "/images/portfolio-img.png",
+    "/images/portfolio-img.png",
+    "/images/portfolio-img.png",
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    slidesToShow: 3, // desktop default
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024, // tablets and below
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768, // mobile and below
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+  
+  const scrollAmount = () => {
+    if (!scrollRef.current) return 0;
+    const firstChild = scrollRef.current.children[0] as HTMLElement;
+    return firstChild?.offsetWidth || 0;
   };
+
+  const scrollLeft = () => {
+    scrollRef.current?.scrollBy({
+      left: -scrollAmount(),
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current?.scrollBy({
+      left: scrollAmount(),
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <section className="py-12 md:pb-38">
-      <div className="wrapper px-4">
+    <section className="py-12 md:pb-38 wrapper">
+      <div className=" px-4">
         <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 
-        <div className="flex flex-col md:flex-row justify-between  items-center">
-          <h2 className="text-[28px] lg:text-[44px]  font-bold">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <h2 className="text-[28px] lg:text-[44px] font-bold">
             <span className="text-primary">Profit</span> and
             <span className="text-primary"> 3triving</span> projects.
           </h2>
 
-          <p className="text-gray-300 text-base lg:text-xl  pt-4 md:pt-0">
+          <p className="text-gray-300 text-base lg:text-xl pt-4 md:pt-0">
             3trive is not another agency, we&apos;re your partner.
           </p>
         </div>
       </div>
-      <div className="py-4 lg:pl-84">
-        <Slider ref={sliderRef} {...settings}>
+
+      {/* SCROLL SECTION */}
+      <div className="w-full mt-10">
+        <div
+          ref={scrollRef}
+          className="flex gap-4 overflow-x-hidden scroll-smooth no-scrollbar px-4 snap-x snap-mandatory "
+        >
           {images.map((src, index) => (
-            <Image
+            <div
               key={index}
-              src={src}
-              alt={`Portfolio ${index + 1}`}
-              width={672}
-              height={513}
-              className="w-full  px-4 "
-            />
+              className="snap-start min-w-full md:min-w-125 lg:min-w-2xl"
+            >
+              <Image
+                src={src}
+                alt={`Portfolio ${index + 1}`}
+                width={672}
+                height={513}
+                className="w-full h-auto object-cover rounded-xl"
+              />
+            </div>
           ))}
-        </Slider>
-      </div>
+        </div>
 
-      <div className="flex items-center gap-5 pt-4 wrapper">
-        <button
-          onClick={() => sliderRef.current?.slickPrev()}
-          className="bg-secondary py-3 px-11 rounded-2xl border border-white/10"
-        >
-          <ArrowLeft />
-        </button>
+        {/* BUTTONS */}
+        <div className="flex items-center gap-5 pt-6 wrapper px-4">
+          <button
+            onClick={scrollLeft}
+            className="bg-secondary py-3 px-6 rounded-2xl border border-white/10 hover:scale-105 transition"
+          >
+            <ArrowLeft />
+          </button>
 
-        <button
-          onClick={() => sliderRef.current?.slickNext()}
-          className="bg-secondary py-3 px-11 rounded-2xl border border-white/10"
-        >
-          <ArrowRight />
-        </button>
+          <button
+            onClick={scrollRight}
+            className="bg-secondary py-3 px-6 rounded-2xl border border-white/10 hover:scale-105 transition"
+          >
+            <ArrowRight />
+          </button>
+        </div>
       </div>
     </section>
   );
