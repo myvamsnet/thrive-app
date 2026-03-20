@@ -69,14 +69,14 @@ const Testimonials = () => {
           <button
             type="button"
             onClick={handleScrollLeft}
-            className="bg-secondary py-2 px-6 md:py-3 md:px-11 rounded-2xl border border-white/10"
+            className="bg-secondary py-3 md:px-6 px-8 rounded-2xl border border-white/10"
           >
             <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
           </button>
           <button
             type="button"
             onClick={handleScrollRight}
-            className="bg-secondary py-2 px-6 md:py-3 md:px-11 rounded-2xl border border-white/10"
+            className="bg-secondary py-3 md:px-6 px-8 rounded-2xl border border-white/10"
           >
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
           </button>
