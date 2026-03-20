@@ -58,7 +58,7 @@ const Testimonials = () => {
                   {item.title.split("3triving")[1]}
                 </h2>
 
-                <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p className="text-gray-300 lg:text-xl text-base leading-relaxed">
                   {item.text}
                 </p>
               </div>

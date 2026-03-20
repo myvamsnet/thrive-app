@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className=" ">
-      <div className="wrapper flex lg:flex-row flex-col text-center gap-8 lg:gap-3  py-8 w-full  justify-between items-center text-lg text-gray-300 rounded-3xl bg-[#232B33] p-8 border-4 border-white/10 ">
+      <div className="wrapper flex lg:flex-row flex-col text-center gap-8 lg:gap-3 w-full  justify-between items-center text-lg text-gray-300 rounded-3xl bg-[#232B33] p-8 border-4 border-white/10 ">
         <div>
           <Image src="/images/logo.svg" alt="logo" width={142} height={50} />
         </div>
@@ -32,7 +32,9 @@ const Footer = () => {
           <Image src="/images/linkedin.svg" alt="logo" width={24} height={24} />
         </div>
       </div>
-      <div className=" bg-[url('/images/footer-bg-img.svg')] bg-cover bg-center bg-no-repeat rounded-2xl py-[40px]"></div>
+      <div className=" bg-[url('/images/footer-img.svg')] bg-cover bg-center bg-no-repeat   h-20 mt-10 ">
+        
+      </div>
     </footer>
   );
 }

@@ -13,7 +13,7 @@ const HeroSection = () => {
               Business Today!
             </h1>
 
-            <p className="mt-6 text-gray-400 text-xl font-normal md:text-base text-center mx-auto">
+            <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base text-center mx-auto">
               For non-technical professionals, turning expertise into profitable
               Apps.
             </p>

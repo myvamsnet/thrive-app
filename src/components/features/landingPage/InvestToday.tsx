@@ -8,7 +8,9 @@ const InvestToday = () => {
   return (
     <section className="bg-secondary">
       <div className="wrapper px-4">
-        <p className="uppercase lg:text-xl text-base text-gray-400  mb-6">Invest Today</p>
+        <p className="uppercase lg:text-xl text-base text-gray-400  mb-6">
+          Invest Today
+        </p>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <h2 className="text-[28px] lg:text-[44px] font-bold w-85.75 lg:w-177.25 leading-[130%]">
             <span className="text-primary">Get</span>{" "}
@@ -43,7 +45,7 @@ const InvestToday = () => {
               width={150}
               height={150}
             />
-            <p className="text-gray-300 text-base w-[254px] md:w-[685px] leading-8 tracking-[0%]">
+            <p className="text-gray-300 lg:text-xl text-base w-83.5 md:w-171.25 leading-8 tracking-[0%]">
               You know exactly what your industry needs. So why isn’t your
               product live yet? You’re not afraid of the project. You’re afraid
               of wasting time and money on something that won’t work. Book
