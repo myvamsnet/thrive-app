@@ -63,7 +63,7 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-2 md:gap-5 pt-4">
+        <div className="flex items-center gap-2 md:gap-3 pt-4">
           <button
             type="button"
             onClick={handleScrollLeft}
