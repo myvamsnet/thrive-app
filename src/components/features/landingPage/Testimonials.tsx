@@ -29,9 +29,7 @@ const Testimonials = () => {
   return (
     <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-38 px-4 md:px-10">
       <div className="wrapper">
-        <p className="text-sm md:text-xl tracking-[0%] text-gray-400 mb-5">
-          TESTIMONIALS
-        </p>
+        <p className="text-xl tracking-[0%] text-gray-400 mb-5">TESTIMONIALS</p>
         <div
           ref={scrollContainerRef}
           className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
@@ -65,18 +63,18 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-3 md:gap-5 pt-4">
+        <div className="flex items-center gap-2 md:gap-5 pt-4">
           <button
             type="button"
             onClick={handleScrollLeft}
-            className="bg-secondary py-3 md:px-6 px-8 rounded-2xl border border-white/10"
+            className="bg-[#232B33]  py-4 md:px-10  flex items-center justify-center md:w-auto w-full rounded-2xl border border-white/10"
           >
             <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
           </button>
           <button
             type="button"
             onClick={handleScrollRight}
-            className="bg-secondary py-3 md:px-6 px-8 rounded-2xl border border-white/10"
+            className="bg-[#232B33]  py-4 md:px-10  flex items-center justify-center md:w-auto w-full rounded-2xl border border-white/10"
           >
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
           </button>

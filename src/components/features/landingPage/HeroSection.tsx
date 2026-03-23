@@ -5,15 +5,18 @@ import { Slide } from "react-awesome-reveal";
 const HeroSection = () => {
   return (
     <>
-      <section className="min-h-screen bg-[url('/images/hero_image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
+      <section
+        id="home"
+        className="min-h-screen bg-[url('/images/hero_image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10"
+      >
         <Slide direction="up">
           <div className=" mx-auto pt-18.5">
-            <h1 className="text-4xl md:text-6xl font-bold lg:w-202.25 w-81.25 md:text-center  mx-auto lg:leading-21.5 leading-11.5">
+            <h1 className="text-[40px] md:text-6xl font-bold lg:w-202.25 w-81.25 md:text-center  mx-auto lg:leading-21.5 leading-11.5">
               Move From Idea to a <span className="text-primary">3triving</span>{" "}
               Business Today!
             </h1>
 
-            <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base text-center mx-auto">
+            <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base md:text-center mx-auto lg:pl-0 pl-5 leading-[30px]">
               For non-technical professionals, turning expertise into profitable
               Apps.
             </p>
@@ -27,7 +30,7 @@ const HeroSection = () => {
           </button>
 
           {/* Secondary Button */}
-          <button className="border border-tertiary text-terborder-tertiary font-semibold px-8 py-3 rounded-lg w-full">
+          <button className="border border-tertiary text-tertiary font-semibold px-8 py-3 rounded-lg w-full">
             Chat with support
           </button>
         </div>
