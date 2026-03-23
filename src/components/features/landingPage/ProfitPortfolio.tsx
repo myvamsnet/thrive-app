@@ -42,7 +42,7 @@ const ProfitPortfolio = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <h2 className="text-[28px] lg:text-[44px] font-bold">
-            <span className="text-primary">Profit</span> and
+            <span className="text-primary">Profititable</span> and
             <span className="text-primary"> 3triving</span> projects.
           </h2>
 
@@ -78,14 +78,14 @@ const ProfitPortfolio = () => {
         <div className="flex items-center gap-5 pt-6 wrapper px-4">
           <button
             onClick={scrollLeft}
-            className="bg-secondary py-3 px-6 rounded-2xl border border-white/10 hover:scale-105 transition"
+            className="bg-secondary md:py-3 py-2 md:px-6 px-7 rounded-2xl border border-white/10 hover:scale-105 transition"
           >
             <ArrowLeft />
           </button>
 
           <button
             onClick={scrollRight}
-            className="bg-secondary py-3 px-6 rounded-2xl border border-white/10 hover:scale-105 transition"
+            className="bg-secondary md:py-3 py-2 md:px-6 px-7 rounded-2xl border border-white/10 hover:scale-105 transition"
           >
             <ArrowRight />
           </button>

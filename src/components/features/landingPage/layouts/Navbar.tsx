@@ -44,7 +44,8 @@ const Navbar = () => {
     >
       <div className="wrapper flex items-center justify-between gap-10 opacity-88 py-6 mx-6 lg:px-0 px-4">
         {/* Logo */}
-        <Image src="/images/logo.svg" alt="logo" width={142} height={50} />
+        <Image src="/images/logo.svg" alt="logo" width={142} height={50} className="lg:block hidden"/>
+        <Image src="/images/logo.svg" alt="logo" width={82} height={28} className="lg:hidden block"/>
 
         {/* Mobile toggle */}
         <button onClick={toggleMenu} className="lg:hidden">

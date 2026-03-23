@@ -84,10 +84,10 @@ const AboutSection = () => {
         <Fade direction="down">
             <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
               We don’t just build products, we build{" "}
-              <span className="text-primary">Striving</span> businesses.
+              <span className="text-primary">3triving</span> businesses.
             </h2>
 
-            <p className="text-gray-400 md:w-[343px] lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-4">
+            <p className="text-gray-400 md:w-85.75 lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-4">
               You know exactly what your industry needs. So why isn’t your
               product live yet? We’re not just a service provider; it’s the
               catalytic force that transforms ideas into thriving digital
