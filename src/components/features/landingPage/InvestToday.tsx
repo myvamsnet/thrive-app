@@ -37,7 +37,7 @@ const InvestToday = () => {
           </Zoom>
         </div>
         {/* Bottom CTA Section */}
-        <div className="mt-8 mb-38 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2 lg:w-300 h-full">
+        <div className="mt-8 my-17 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2 lg:w-300 h-full">
           <div className="flex lg:flex-row flex-col items-center gap-3">
             <Image
               src="/images/slots-image.svg"
