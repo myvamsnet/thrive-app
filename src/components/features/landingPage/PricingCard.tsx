@@ -19,7 +19,10 @@ const PricingCard = ({
   highlighted = false,
 }: PricingCardProps) => {
   return (
-    <div className="relative bg-[#232B33] p-8 border border-white/10 rounded-2xl overflow-hidden">
+    <section
+      id="Pricing"
+      className="relative bg-[#232B33] p-8 border border-white/10 rounded-2xl overflow-hidden"
+    >
       {/* Glow background for highlighted card */}
 
       {highlighted && (
@@ -69,7 +72,7 @@ const PricingCard = ({
           Book Package
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

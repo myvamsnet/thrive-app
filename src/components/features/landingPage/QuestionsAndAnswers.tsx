@@ -8,7 +8,7 @@ const QuestionAndAnswer = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="px-2 sm:px-6 py-20 sm:py-28 lg:py-[140px]">
+    <section id="FAQS" className="px-2 sm:px-6 py-20 sm:py-28 lg:py-[140px]">
       <div className="wrapper">
         <div>
           <p className="text-xl tracking-[0%] text-gray-400 mb-5">
