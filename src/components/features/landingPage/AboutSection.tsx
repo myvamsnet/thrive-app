@@ -15,7 +15,10 @@ const AboutSection = () => {
     { src: "/images/revenue.svg", alt: "Revenue illustration" },
   ];
   return (
-    <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 md:px-10">
+    <section
+      id="about"
+      className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-2 md:px-10"
+    >
       <div className="wrapper lg:space-y-39 space-y-17">
         <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           <div>
@@ -68,33 +71,33 @@ const AboutSection = () => {
 
         <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
           {/* Left Image */}
-         
-            <div className="rounded-2xl border-[#232B33] opacity-80">
-              <Image
-                src="/images/whyus-image.svg"
-                alt="Building"
-                width={390}
-                height={568}
-                className="w-full"
-              />
-            </div>
-          {/* Right Content */}
-          <div>
-            <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
-        <Fade direction="down">
-            <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
-              We don’t just build products, we build{" "}
-              <span className="text-primary">Striving</span> businesses.
-            </h2>
 
-            <p className="text-gray-400 md:w-[343px] lg:text-xl text-base lg:w-[778px] font-normal leading-8 mb-4">
-              You know exactly what your industry needs. So why isn’t your
-              product live yet? We’re not just a service provider; it’s the
-              catalytic force that transforms ideas into thriving digital
-              ecosystems. We build profit-generating machines. We focus on the
-              metrics that determine whether a product thrives.
-            </p>
-      </Fade>
+          <div className="rounded-2xl border-[#232B33] opacity-80">
+            <Image
+              src="/images/whyus-image.svg"
+              alt="Building"
+              width={390}
+              height={568}
+              className="w-full"
+            />
+          </div>
+          {/* Right Content */}
+          <div id="Why Us">
+            <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
+            <Fade direction="down">
+              <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
+                We don’t just build products, we build{" "}
+                <span className="text-primary">3triving</span> businesses.
+              </h2>
+
+              <p className="text-gray-400 md:w-85.75 lg:text-xl text-base  lg:w-[778px] font-normal leading-8 mb-4">
+                You know exactly what your industry needs. So why isn’t your
+                product live yet? We’re not just a service provider; it’s the
+                catalytic force that transforms ideas into thriving digital
+                ecosystems. We build profit-generating machines. We focus on the
+                metrics that determine whether a product thrives.
+              </p>
+            </Fade>
             {/* Cards */}
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
               {whyUsCards.map((card) => (

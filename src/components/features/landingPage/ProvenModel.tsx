@@ -1,6 +1,6 @@
 import { provenModelData } from "@/components/constant/provenModelData";
 import ProvenModelCards from "./ProvenModelCards";
-import { Flip, Zoom } from "react-awesome-reveal";
+import { Flip} from "react-awesome-reveal";
 
 const ProvenModel = () => {
   return (

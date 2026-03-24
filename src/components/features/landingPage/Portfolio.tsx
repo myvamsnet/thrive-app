@@ -17,7 +17,7 @@ const Portfolio = () => {
             <span className="text-primary">thriving</span> product.
           </h2>
 
-          <p className="text-gray-400 text-xl">
+          <p className="text-gray-400 lg:text-xl text-base">
             Our ultimate goal is your success!
           </p>
         </div>

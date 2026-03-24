@@ -13,7 +13,7 @@ import InvestToday from "@/components/features/landingPage/InvestToday";
 
 const page = () => {
   return (
-    <main className=" bg-secondary  text-white">
+    <main className=" bg-secondary  text-white overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <BottomBar />
