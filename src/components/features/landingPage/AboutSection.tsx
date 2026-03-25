@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {  Bounce,  Fade,  Rotate,} from "react-awesome-reveal";
+import WhyUs from "./WhyUs";
 
 
 const AboutSection = () => {
@@ -9,18 +10,14 @@ const AboutSection = () => {
     { src: "/images/grow.svg", alt: "Grow" },
   ];
 
-  const whyUsCards = [
-    { src: "/images/activation.svg", alt: "Activation illustration" },
-    { src: "/images/retention.svg", alt: "Retention illustration" },
-    { src: "/images/revenue.svg", alt: "Revenue illustration" },
-  ];
+  
   return (
     <section
       id="about"
       className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-2 md:px-10"
     >
       <div className="wrapper lg:space-y-39 space-y-17">
-        <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
+        <div className="flex flex-col md:flex-row justifty-center items-center gap-8 px-2">
           <div>
             <div>
               <p className="text-xl uppercase   tracking-[0%] text-gray-400 mb-3">
@@ -42,7 +39,14 @@ const AboutSection = () => {
                 </p>
               </Fade>
             </div>
-
+            <div className="rounded-2xl border-[#232B33] opacity-80 md:hidden block pb-4">
+              <Image
+                src="/images/mobile-about-img.svg"
+                alt="Team meeting"
+                width={343}
+                height={327}
+              />
+            </div>
             {/* Cards */}
             <Bounce>
               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
@@ -59,7 +63,7 @@ const AboutSection = () => {
               </div>
             </Bounce>
           </div>
-          <div className="rounded-2xl border-[#232B33] opacity-80  ">
+          <div className="rounded-2xl border-[#232B33] opacity-80 md:block hidden ">
             <Image
               src="/images/about-image.svg"
               alt="Team meeting"
@@ -69,50 +73,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="flex  flex-col-reverse md:flex-row justifty-center items-center gap-8 px-2">
-          {/* Left Image */}
-
-          <div className="rounded-2xl border-[#232B33] opacity-80">
-            <Image
-              src="/images/whyus-image.svg"
-              alt="Building"
-              width={390}
-              height={568}
-              className="w-full"
-            />
-          </div>
-          {/* Right Content */}
-          <div id="Why Us">
-            <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
-            <Fade direction="down">
-              <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
-                We don’t just build products, we build{" "}
-                <span className="text-primary">3triving</span> businesses.
-              </h2>
-
-              <p className="text-gray-400 md:w-85.75 lg:text-xl text-base  lg:w-[778px] font-normal leading-8 mb-4">
-                You know exactly what your industry needs. So why isn’t your
-                product live yet? We’re not just a service provider; it’s the
-                catalytic force that transforms ideas into thriving digital
-                ecosystems. We build profit-generating machines. We focus on the
-                metrics that determine whether a product thrives.
-              </p>
-            </Fade>
-            {/* Cards */}
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-              {whyUsCards.map((card) => (
-                <Image
-                  key={card.src}
-                  src={card.src}
-                  alt={card.alt}
-                  width={248}
-                  height={220}
-                  className="w-full"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+     <WhyUs/>
       </div>
     </section>
   );

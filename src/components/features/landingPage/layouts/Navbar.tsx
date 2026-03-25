@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="wrapper flex items-center justify-between gap-10 opacity-88 py-6 mx-6 lg:px-0 px-4">
         {/* Logo */}
-        <Link href="/" >
+        
           <Image
             src="/images/logo.svg"
             alt="logo"
@@ -30,7 +30,7 @@ const Navbar = () => {
             height={50}
             className="lg:block hidden"
           />
-        </Link>
+       
 
         <Image
           src="/images/logo.svg"
