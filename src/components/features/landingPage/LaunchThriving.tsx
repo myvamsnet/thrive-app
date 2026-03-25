@@ -4,7 +4,7 @@ import Footer from "./layouts/Footer";
 
 const LaunchThriving = () => {
   return (
-    <section className="bg-secondary  pt-38 px-4">
+    <section className="bg-secondary  pt-17 px-4">
       <Bounce>
         {/* Background Card */}
         <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl">
@@ -38,7 +38,7 @@ const LaunchThriving = () => {
           </div>
         </div>
       </Bounce>
-      <div className="mt-24">
+      <div className="mt-6 md:mt-16">
         <Footer />
       </div>
     </section>
