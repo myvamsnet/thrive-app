@@ -9,7 +9,7 @@ const ProfitPortfolio = () => {
 
   const images = [
     "/images/portfolio-img.png",
-    "/images/portfolio-img.png",
+    "/images/porfolio_img.svg",
     "/images/portfolio-img.png",
     "/images/portfolio-img.png",
   ];
