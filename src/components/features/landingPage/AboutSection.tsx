@@ -24,14 +24,14 @@ const AboutSection = () => {
                 About
               </p>
               <Fade direction="down">
-                <h1 className="lg:text-[44px] text-[28px]  lg:w-[709px] md:w-[343px] lg:leading-15 md:leading-[130%] font-bold  mb-4">
+                <h1 className="lg:text-[44px] text-[28px]  lg:w-177.25 md:w-85.75 lg:leading-15 md:leading-[130%] font-bold  mb-4">
                   We build <span className="text-primary">profitable</span> tech
                   products for audacious{" "}
                   <span className="text-primary">non-technical</span>{" "}
                   professionals.
                 </h1>
 
-                <p className="text-gray-400 lg:w-[778px] md:w-[343px] lg:text-xl text-base leading-8 mb-6">
+                <p className="text-gray-400 lg:w-194.5 md:w-85.75 lg:text-xl text-base leading-8 mb-6">
                   You’ve spent years mastering your field. Solve that problem
                   now, launch the product people have been waiting for. We
                   handle design, development, and launch in 120 days. One team,
@@ -65,7 +65,7 @@ const AboutSection = () => {
           </div>
           <div className="rounded-2xl border-[#232B33] opacity-80 md:block hidden ">
             <Image
-              src="/images/about-image.svg"
+              src="/images/techMan.svg"
               alt="Team meeting"
               width={390}
               height={598}
