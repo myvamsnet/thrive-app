@@ -12,11 +12,11 @@ const HeroSection = () => {
         <Slide direction="up">
           <div className=" mx-auto  pt-18.5 px-4">
             <h1 className="text-[40px] md:text-6xl font-bold lg:w-202.25 w-81.25 md:text-center lg:mx-auto  lg:leading-21.5 leading-11.5">
-              Move From Idea to a <span className="text-primary">3triving</span>{" "}
-              Business Today!
+              We Turn Your Expertise into a{" "}
+              <span className="text-primary"> Profitable</span>Tech Product
             </h1>
 
-            <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base md:text-center  leading-[30px]">
+            <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base md:text-center  leading-7.5">
               For non-technical professionals, turning expertise into profitable
               Apps.
             </p>
@@ -35,16 +35,17 @@ const HeroSection = () => {
           </button>
         </div>
         {/* Images */}
-        <div className="mt-16  items-center justify-center overflow-x-hidden">
-          <Marquee gradient={false} speed={50}>
+        {/* Images */}
+        <div className="mt-16 w-full overflow-hidden">
+          <Marquee gradient={false} speed={50} pauseOnHover>
             {heroimages.map((image, index) => (
-              <div key={index} className=" px-2">
+              <div key={index} className="mx-2 shrink-0 w-150 md:w-150">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={601}
                   height={506}
-                  className="object-cover w-full"
+                  className="w-full h-auto rounded-xl object-cover"
                 />
               </div>
             ))}
