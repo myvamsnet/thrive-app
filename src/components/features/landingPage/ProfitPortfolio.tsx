@@ -8,10 +8,10 @@ const ProfitPortfolio = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const images = [
-    "/images/portfolio-img.png",
-    "/images/porfolio_img.svg",
-    "/images/portfolio-img.png",
-    "/images/portfolio-img.png",
+    "/images/manageYourBusiness.svg",
+    "/images/Mittas (1).svg",
+    "/images/Angy Care Home (1).svg",
+    
   ];
 
   const scrollAmount = () => {
@@ -35,13 +35,13 @@ const ProfitPortfolio = () => {
   };
 
   return (
-    <section id="POrtfolio" className="py-12 md:pb-38 wrapper">
+    <section id="portfolio" className="py-12 md:pb-38 wrapper">
       <div className=" px-4">
         <p className="text-xl text-gray-400 mb-5">PORTFOLIO</p>
 
         <div className="flex flex-col md:flex-row justify-between lg:items-center ">
           <h2 className="text-[28px] lg:text-[44px] font-bold  ">
-            <span className="text-primary">Profititable</span> and{" "}
+            <span className="text-primary">Profitable</span> and{" "}
             <br className="lg:hidden" />
             <span className="text-primary"> 3triving</span> projects.
           </h2>
@@ -69,7 +69,7 @@ const ProfitPortfolio = () => {
                 alt={`Portfolio ${index + 1}`}
                 width={672}
                 height={513}
-                className="w-full h-95 md:h-100 lg:h-125 object-cover rounded-xl border border-white/10"
+                className="w-full h-75 md:h-100 lg:h-125 object-cover rounded-xl border border-white/10"
               />
             </div>
           ))}
@@ -79,14 +79,14 @@ const ProfitPortfolio = () => {
         <div className="flex items-center gap-2 pt-6 wrapper px-4">
           <button
             onClick={scrollLeft}
-            className="bg-[#232B33] flex items-center justify-center  py-3 md:px-10  rounded-2xl border border-white/10 md:w-auto  w-full"
+            className="bg-[#232B33] flex items-center justify-center  py-3  md:px-10  rounded-2xl border border-white/10 md:w-auto  w-full"
           >
             <ArrowLeft className="" />
           </button>
 
           <button
             onClick={scrollRight}
-            className="bg-[#232B33]  flex items-center justify-center py-3 md:px-10  rounded-2xl border border-white/10 md:w-auto  w-full "
+            className="bg-[#232B33]  flex items-center justify-center py-3  md:px-10  rounded-2xl border border-white/10 md:w-auto  w-full "
           >
             <ArrowRight />
           </button>

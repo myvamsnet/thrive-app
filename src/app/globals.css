@@ -137,6 +137,21 @@
   --color-tertiary: #c7ff01;
 }
 
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+
+@theme {
+  --animate-marquee: marquee 20s linear infinite;
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;

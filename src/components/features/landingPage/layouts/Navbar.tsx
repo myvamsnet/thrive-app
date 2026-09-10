@@ -35,8 +35,8 @@ const Navbar = () => {
         <Image
           src="/images/logo.svg"
           alt="logo"
-          width={82}
-          height={28}
+          width={100}
+          height={40}
           className="lg:hidden block"
         />
 

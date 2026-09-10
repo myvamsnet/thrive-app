@@ -7,7 +7,7 @@ const LaunchThriving = () => {
     <section className="bg-secondary  pt-17 px-4">
       <Bounce>
         {/* Background Card */}
-        <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+        <div className="wrapper  bg-[url('/images/launch-image.svg')] bg-cover bg-center bg-no-repeat rounded-2xl  border-8 border-[#232B33]">
           {/* Content */}
           <div className="text-center py-20 px-6 md:px-16">
             {/* Heading */}
