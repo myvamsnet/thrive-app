@@ -22,7 +22,7 @@ const WhyUs = () => {
         />
       </div>
       {/* Right Content */}
-      <div id="Why Us">
+      <div id="why-us">
         <p className="text-xl uppercase  text-gray-400 mb-3">Why Us?</p>
         <Fade direction="down">
           <h2 className="lg:text-[44px] text-[28px]  lg:w-[778px] w-[343px] lg:leading-15 md:leading-[130%] font-semibold  mb-2">
