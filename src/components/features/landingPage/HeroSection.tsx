@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className=" mx-auto  pt-18.5 px-4">
             <h1 className="text-[40px] md:text-6xl font-bold lg:w-202.25 w-81.25 text-center lg:mx-auto  lg:leading-21.5 leading-11.5">
               We Turn Your Expertise into a{" "}
-              <span className="text-[#C6FF00]"> Profitable</span>Tech Product
+              <span className="text-[#C6FF00]"> Profitable </span>Tech Product
             </h1>
 
             <p className="mt-6 text-gray-400 font-normal lg:text-xl text-base md:text-center  leading-7.5">

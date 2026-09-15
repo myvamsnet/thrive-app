@@ -37,8 +37,8 @@ const InvestToday = () => {
           </Zoom>
         </div>
         {/* Bottom CTA Section */}
-        <div className="mt-8 my-17 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3 mx-2 lg:w-300 h-full">
-          <div className="flex lg:flex-row flex-col items-center gap-6">
+        <div className="mt-8 my-17 bg-[#232B33] rounded-2xl p-6 flex flex-col md:flex-row items-center  gap-3  lg:w-292 h-full">
+          <div className="flex lg:flex-row flex-col items-center gap-4">
             <Image
               src="/images/smiling_Girl.svg"
               alt="slot-image"
@@ -51,7 +51,7 @@ const InvestToday = () => {
               of wasting time and money on something that won’t work. Book
               Clarity Call now!
             </p>
-            <p className="text-tertiary font-bold text-[32px] underline">
+            <p className="text-tertiary font-bold text-[32px] underline ">
               Only 4 slots left
             </p>
           </div>
