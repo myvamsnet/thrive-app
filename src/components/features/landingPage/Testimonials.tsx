@@ -27,7 +27,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:py-38 px-4 md:px-10">
+    <section
+      id="testimonial"
+      className="min-h-screen bg-[url('/images/background-image.svg')] bg-cover bg-center bg-no-repeat py-12 md:pt-38 px-4 md:px-10"
+    >
       <div className="wrapper">
         <p className="text-xl tracking-[0%] text-gray-400 mb-5">TESTIMONIALS</p>
         <div
@@ -37,7 +40,7 @@ const Testimonials = () => {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-[#1F272E] flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 rounded-3xl min-w-[85%] sm:min-w-[80%] md:min-w-[1117px] p-4 md:p-8 snap-start"
+              className="bg-[#1F272E] flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 rounded-3xl min-w-[85%] sm:min-w-[80%] md:min-w-279.25 p-4 md:p-8 snap-start"
             >
               <div className="w-full md:w-auto flex justify-center md:justify-start">
                 <Image

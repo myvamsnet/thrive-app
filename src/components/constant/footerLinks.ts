@@ -1,9 +1,9 @@
 export const footerLinks = [
   { name: "Home", href: "home" },
   { name: "About", href: "about" },
-  { name: "Why Us", href: "Why Us" },
-  { name: "Pricing", href: "Pricing" },
-  { name: "FAQs", href: "FAQS" },
-  { name: "Portfolio", href: "POrtfolio" },
-  { name: "Testimonial", href: "testimonail" },
+  { name: "Why Us", href: "why-us" },
+  { name: "Pricing", href: "pricing" },
+  { name: "FAQs", href: "faqs" },
+  { name: "Portfolio", href: "portfolio" },
+  { name: "Testimonial", href: "testimonial" },
 ];
