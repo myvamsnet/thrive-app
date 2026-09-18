@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title:"3triveLab",
-  description:"3triving By MyVamnet",
+  title: "3triveLab By MyVamnet",
+  description: "3triving By MyVamnet",
 };
 
 export default function RootLayout({
